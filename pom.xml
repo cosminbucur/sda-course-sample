@@ -12,6 +12,7 @@
     <modules>
         <module>java-advanced</module>
         <module>java-advanced-code</module>
+        <module>design-patterns</module>
     </modules>
 
 </project>
