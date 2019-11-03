@@ -21,6 +21,9 @@ The project contains multiple sub modules, each with a similar structure:
 
 ### design patterns
 
+### spring boot 2
+
+### spring data jpa
 
 ---
 
