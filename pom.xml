@@ -16,6 +16,7 @@
         <module>design-patterns</module>
         <module>spring-boot</module>
         <module>spring-data-jpa</module>
+        <module>spring-boot-jsp</module>
     </modules>
 
     <build>
