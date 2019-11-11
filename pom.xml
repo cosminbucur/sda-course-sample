@@ -17,6 +17,8 @@
         <module>spring-boot</module>
         <module>spring-data-jpa</module>
         <module>spring-boot-jsp</module>
+        <module>spring-thymeleaf</module>
+        <module>spring-mvc-hibernate</module>
     </modules>
 
     <build>
