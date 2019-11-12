@@ -19,6 +19,7 @@
         <module>spring-boot-jsp</module>
         <module>spring-thymeleaf</module>
         <module>spring-mvc-hibernate</module>
+        <module>spring-boot-mvc-security</module>
     </modules>
 
     <build>
