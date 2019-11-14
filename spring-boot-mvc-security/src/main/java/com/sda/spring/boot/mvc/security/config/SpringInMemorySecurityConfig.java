@@ -2,11 +2,10 @@ package com.sda.spring.boot.mvc.security.config;
 
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
-import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 
-@EnableWebSecurity
-public class SpringSecurityConfig extends WebSecurityConfigurerAdapter {
+//@EnableWebSecurity
+public class SpringInMemorySecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
@@ -20,11 +19,12 @@ public class SpringSecurityConfig extends WebSecurityConfigurerAdapter {
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
         auth.inMemoryAuthentication()
             .withUser("admin")
-            .password("{noop}admin@password") //{noop} makes sure that the password encoder doesn't do anything
+                //{noop} makes sure that the password encoder doesn't do anything
+                .password("{noop}pass")
             .roles("ADMIN") // Role of the user
             .and()
             .withUser("user")
-            .password("{noop}user@password")
+                .password("{noop}pass")
             .credentialsExpired(true)
             .accountExpired(true)
             .accountLocked(true)
