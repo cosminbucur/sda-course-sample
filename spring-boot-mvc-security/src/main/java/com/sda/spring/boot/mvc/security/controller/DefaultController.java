@@ -1,17 +1,16 @@
 package com.sda.spring.boot.mvc.security.controller;
 
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 
-@Controller
+//@Controller
 public class DefaultController {
 
-    @GetMapping("/")
+    //    @GetMapping("/")
     public String home1() {
         return "/home";
     }
 
-    @GetMapping("/home")
+    //    @GetMapping("/home")
     public String home() {
         return "/home";
     }

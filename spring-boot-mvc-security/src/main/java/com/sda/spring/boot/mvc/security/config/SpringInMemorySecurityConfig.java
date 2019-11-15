@@ -25,9 +25,6 @@ public class SpringInMemorySecurityConfig extends WebSecurityConfigurerAdapter {
             .and()
             .withUser("user")
                 .password("{noop}pass")
-            .credentialsExpired(true)
-            .accountExpired(true)
-            .accountLocked(true)
             .roles("USER");
     }
 }
