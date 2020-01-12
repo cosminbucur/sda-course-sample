@@ -20,6 +20,7 @@
         <module>spring-thymeleaf</module>
         <module>spring-mvc-hibernate</module>
         <module>spring-boot-mvc-security</module>
+        <module>spring-core</module>
     </modules>
 
     <build>
