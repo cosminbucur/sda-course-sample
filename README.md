@@ -1,4 +1,4 @@
-# Group 10
+# Group X
 
 ## Project structure
 The project contains multiple sub modules, each with a similar structure:
@@ -21,9 +21,23 @@ The project contains multiple sub modules, each with a similar structure:
 
 ### design patterns
 
-### spring boot 2
+### spring
+ 
+##### spring core
 
-### spring data jpa
+##### spring data jpa
+
+##### spring mvc jsp
+
+##### spring mvc hibernate
+
+##### spring boot jsp
+
+##### spring boot thymeleaf
+
+##### spring boot security
+
+##### spring boot rest
 
 ---
 

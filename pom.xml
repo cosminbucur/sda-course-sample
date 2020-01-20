@@ -21,6 +21,7 @@
         <module>spring-mvc-hibernate</module>
         <module>spring-boot-mvc-security</module>
         <module>spring-core</module>
+        <module>spring-mvc</module>
     </modules>
 
     <build>
