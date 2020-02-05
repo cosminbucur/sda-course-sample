@@ -1,0 +1,27 @@
+server:
+  port: 8083
+
+spring:
+  h2.console.enabled: true
+
+jdbc:
+  driver-class-name: org.h2.Driver
+  url: jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+  username: sa
+  password:
+
+hibernate:
+  dialect: org.hibernate.dialect.H2Dialect
+  hbm2ddl.auto: create-drop
+  show_sql: true
+  format_sql: true
+
+logging:
+  level:
+    root: INFO
+    org.springframework.web: DEBUG
+    org.hibernate: ERROR
+    com.sda.testing.advanced: DEBUG
+
+frontend:
+  baseUrl: http://localhost:4200
