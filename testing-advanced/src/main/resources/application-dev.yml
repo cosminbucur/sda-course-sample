@@ -1,0 +1,27 @@
+server:
+  port: 8083
+
+jdbc:
+  url: jdbc:mysql://localhost:3306/bookapp
+  username: root
+  password: root
+  driver-class-name: com.mysql.cj.jdbc.Driver
+
+hibernate:
+  dialect: org.hibernate.dialect.MySQL8Dialect
+  hbm2ddl.auto: update
+  show_sql: true
+  format_sql: true
+
+# starter-web or jpa is using logback with slf4j as implementation
+logging:
+  # default logging goes to console
+  file: log.txt # write logs to this file
+  level:
+    root: INFO
+    org.springframework.web: DEBUG
+    org.hibernate: ERROR
+    com.sda.testing.advanced: DEBUG
+
+frontend:
+  baseUrl: http://localhost:4200
