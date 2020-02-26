@@ -22,6 +22,8 @@
         <module>spring-boot-mvc-security</module>
         <module>spring-core</module>
         <module>spring-mvc</module>
+        <module>testing-advanced</module>
+        <module>testing</module>
     </modules>
 
     <build>
