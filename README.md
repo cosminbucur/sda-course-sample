@@ -45,7 +45,7 @@ The project contains multiple sub modules, each with a similar structure:
 
 ##### in browser
 
-	go to github repo at https://github.com/cosminbucur/sda-course
+	go to github repo at https://github.com/cosminbucur/sda-course-sample
 
 	copy clone command
 
@@ -55,10 +55,10 @@ The project contains multiple sub modules, each with a similar structure:
 	right click > git bash (or terminal)
 
 ##### in terminal
-	> git clone https://github.com/cosminbucur/sda-course.git
+	> git clone https://github.com/cosminbucur/sda-course-sample.git
 
 ##### in intellij
-	open project C:\dev\sda-course
+	open project C:\dev\sda-course-sample
 
 	check auto import and wait
 
