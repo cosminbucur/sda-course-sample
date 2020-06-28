@@ -24,6 +24,8 @@
         <module>spring-mvc</module>
         <module>testing-advanced</module>
         <module>testing</module>
+        <module>jdbc</module>
+        <module>hibernate</module>
     </modules>
 
     <build>
