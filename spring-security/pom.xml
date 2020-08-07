@@ -10,7 +10,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>spring-boot-mvc-security</artifactId>
+    <artifactId>spring-security</artifactId>
 
     <dependencies>
 
