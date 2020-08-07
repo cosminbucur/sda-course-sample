@@ -5,27 +5,39 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.sda</groupId>
-    <artifactId>sda-course</artifactId>
+    <artifactId>sda-course-sample</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
 
+
     <modules>
-        <module>parent-boot-2</module>
+        <module>fundamentals</module>
+        <module>testing</module>
         <module>java-advanced</module>
-        <module>java-advanced-code</module>
         <module>design-patterns</module>
+        <module>java-advanced-code</module>
+
+        <module>sql</module>
+        <module>nosql</module>
+        <module>jdbc</module>
+        <module>hibernate</module>
+
+        <module>java-fx</module>
+
+        <module>spring-core</module>
+        <module>spring-mvc</module>
+        <module>spring-mvc-hibernate</module>
+
+        <!-- parent-boot-2 -->
+        <module>parent-boot-2</module>
         <module>spring-boot</module>
         <module>spring-data-jpa</module>
         <module>spring-boot-jsp</module>
         <module>spring-thymeleaf</module>
-        <module>spring-mvc-hibernate</module>
-        <module>spring-boot-mvc-security</module>
-        <module>spring-core</module>
-        <module>spring-mvc</module>
+        <module>spring-security</module>
+        <module>spring-boot-rest</module>
+
         <module>testing-advanced</module>
-        <module>testing</module>
-        <module>jdbc</module>
-        <module>hibernate</module>
     </modules>
 
     <build>

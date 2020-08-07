@@ -10,7 +10,7 @@
     <description>Parent for all Spring Boot 2 modules</description>
 
     <parent>
-        <artifactId>sda-course</artifactId>
+        <artifactId>sda-course-sample</artifactId>
         <groupId>com.sda</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
