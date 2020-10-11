@@ -38,6 +38,7 @@
         <module>spring-security</module>
         <module>spring-boot-rest</module>
         <module>testing-advanced</module>
+        <module>spring-mvc-xml</module>
     </modules>
 
     <properties>
