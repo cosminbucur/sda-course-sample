@@ -1,6 +1,6 @@
-CREATE SCHEMA `spring_thymeleaf` ;
+CREATE SCHEMA `spring_thymeleaf_tutorial` ;
 
-CREATE TABLE `spring_thymeleaf`.`product` (
+CREATE TABLE `spring_thymeleaf_tutorial`.`product` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `name` VARCHAR(45) NOT NULL,
   `price` DECIMAL NOT NULL,
