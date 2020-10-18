@@ -15,11 +15,27 @@ The project contains multiple sub modules, each with a similar structure:
 
 ## Courses
 
+### fundamentals
+
+### testing
+
 ### java-advanced
 
 ### java-advanced-code
 
 ### design patterns
+
+### sql
+
+### nosql
+
+### jdbc
+
+### hibernate
+
+### java fx
+
+### html
 
 ### spring
  
@@ -29,15 +45,19 @@ The project contains multiple sub modules, each with a similar structure:
 
 ##### spring mvc jsp
 
+##### spring mvc jsp
+
 ##### spring mvc hibernate
 
 ##### spring boot jsp
 
-##### spring boot thymeleaf
+##### spring thymeleaf
 
-##### spring boot security
+##### spring security
 
 ##### spring boot rest
+
+### testing advanced
 
 ---
 
