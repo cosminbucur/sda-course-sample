@@ -2,19 +2,27 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <modelVersion>4.0.0</modelVersion>
-    <artifactId>parent-boot-2</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
-    <name>parent-boot-2</name>
-    <packaging>pom</packaging>
-    <description>Parent for all Spring Boot 2 modules</description>
-
     <parent>
         <artifactId>sda-course-sample</artifactId>
         <groupId>com.sda</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
+    <modelVersion>4.0.0</modelVersion>
+    <packaging>pom</packaging>
+    <name>parent-boot-2</name>
+    <description>Parent for all Spring Boot 2 modules</description>
 
+    <artifactId>parent-boot-2</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <properties>
+        <spring-boot.version>2.4.2</spring-boot.version>
+        <bootstrap.version>5.1.0</bootstrap.version>
+        <webjars-locator.version>0.42</webjars-locator.version>
+        <font-awesome.version>5.15.4</font-awesome.version>
+    </properties>
+
+    <!-- used when project has a parent other than spring parent -->
     <dependencyManagement>
         <dependencies>
             <dependency>
@@ -28,6 +36,14 @@
     </dependencyManagement>
 
     <dependencies>
+        <!-- used when project has no parent -->
+        <!--        <dependency>-->
+        <!--            <groupId>org.springframework.boot</groupId>-->
+        <!--            <artifactId>spring-boot-starter-parent</artifactId>-->
+        <!--            <version>${spring-boot.version}</version>-->
+        <!--        </dependency>-->
+
+        <!-- enable junit 5 tests -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
@@ -44,6 +60,7 @@
     <build>
         <pluginManagement>
             <plugins>
+                <!-- Package as an executable jar/war -->
                 <plugin>
                     <groupId>org.springframework.boot</groupId>
                     <artifactId>spring-boot-maven-plugin</artifactId>
@@ -52,10 +69,5 @@
             </plugins>
         </pluginManagement>
     </build>
-
-    <properties>
-        <!-- plugins -->
-        <spring-boot.version>2.2.0.RELEASE</spring-boot.version>
-    </properties>
 
 </project>

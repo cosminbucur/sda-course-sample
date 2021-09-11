@@ -1,0 +1,23 @@
+spring:
+  # h2 datasource configuration
+  datasource:
+    # load data from an sql file
+    initialize: true
+    # create schema
+    schema: classpath:/schema.sql
+    # load data from here
+    data: classpath:/data.sql
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+    username: sa
+    password:
+  jpa:
+    hibernate:
+      ddl-auto: create
+      naming.physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+      use-new-id-generator-mappings: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.H2Dialect
+        show_sql: true
+        format_sql: false

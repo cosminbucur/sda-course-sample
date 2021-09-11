@@ -1,63 +1,48 @@
 # Group X
 
 ## Project structure
-The project contains multiple sub modules, each with a similar structure:
+The project contains multiple sub-modules, each with a similar structure:
 
         course name (ex: java-advanced)
             scr.main.java.com.bucur (packages)
                 topic (ex: collections)
                     subtopic (ex: map)
-                        ex1 (proposed exercise)
-                        slide1 (code from the first slide)
-                        how (practical use of a topic)
 
 ---
 
 ## Courses
 
-### fundamentals
+## java core
+- fundamentals
+- testing
+- java-advanced
+- java-advanced-code
+- design patterns
 
-### testing
+## persistence
+- sql
+- nosql
+- jdbc
+- hibernate
+  
+## frontend
+- java fx
+- html
+  
+## spring
+- spring core
+- spring mvc hibernate
+- spring boot jsp
+- spring thymeleaf
 
-### java-advanced
+## spring security
+- spring security memory
+- spring security jdbc mysql
+- spring security jpa mysql
+- spring security thymeleaf
 
-### java-advanced-code
-
-### design patterns
-
-### sql
-
-### nosql
-
-### jdbc
-
-### hibernate
-
-### java fx
-
-### html
-
-### spring
- 
-##### spring core
-
-##### spring data jpa
-
-##### spring mvc jsp
-
-##### spring mvc jsp
-
-##### spring mvc hibernate
-
-##### spring boot jsp
-
-##### spring thymeleaf
-
-##### spring security
-
-##### spring boot rest
-
-### testing advanced
+- spring boot rest
+- testing advanced
 
 ---
 

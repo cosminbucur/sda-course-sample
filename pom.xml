@@ -2,49 +2,121 @@
 <project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xmlns="http://maven.apache.org/POM/4.0.0"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <modelVersion>4.0.0</modelVersion>
 
     <!-- project metadata -->
     <groupId>com.sda</groupId>
     <!-- project name -->
     <artifactId>sda-course-sample</artifactId>
-    <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
 
+    <packaging>pom</packaging>
+    <modelVersion>4.0.0</modelVersion>
+
     <modules>
+        <!-- java core -->
         <module>fundamentals</module>
         <module>testing</module>
         <module>java-advanced</module>
         <module>design-patterns</module>
         <module>java-advanced-code</module>
 
+        <!-- persistence -->
         <module>sql</module>
         <module>nosql</module>
         <module>jdbc</module>
         <module>hibernate</module>
-
-        <module>java-fx</module>
-
-        <module>spring-core</module>
-        <module>spring-mvc</module>
         <module>spring-mvc-hibernate</module>
+        <module>spring-data-jpa</module>
+
+        <!-- desktop -->
+        <module>java-fx</module>
+        <module>html</module>
+
+        <!-- spring -->
+        <module>spring-core</module>
 
         <!-- parent-boot-2 -->
         <module>parent-boot-2</module>
         <module>spring-boot</module>
-        <module>spring-data-jpa</module>
-        <module>spring-boot-jsp</module>
+
+        <!-- web -->
         <module>spring-thymeleaf</module>
-        <module>spring-security</module>
         <module>spring-boot-rest</module>
         <module>testing-advanced</module>
-        <module>spring-mvc-xml</module>
+
+        <!-- security -->
+        <module>spring-security-memory</module>
+        <module>spring-security-jdbc-mysql</module>
+        <module>spring-security-jpa-mysql</module>
+        <module>spring-security-thymeleaf</module>
+
     </modules>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
+        <maven.compiler.source>11</maven.compiler.source>
+
+        <spring.version>5.2.9.RELEASE</spring.version>
+        <spring-data.version>2.3.4.RELEASE</spring-data.version>
+        <hibernate.version>5.4.22.Final</hibernate.version>
+        <h2.version>1.4.200</h2.version>
+        <mysql.version>8.0.18</mysql.version>
+
+        <jackson.version>2.11.2</jackson.version>
+
+        <junit.version>5.7.0</junit.version>
+        <assertj.version>3.17.2</assertj.version>
+        <mockito.version>3.5.13</mockito.version>
     </properties>
+
+    <dependencies>
+
+        <!-- testing framework -->
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter</artifactId>
+            <version>${junit.version}</version>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- fluent assertions -->
+        <dependency>
+            <groupId>org.assertj</groupId>
+            <artifactId>assertj-core</artifactId>
+            <version>${assertj.version}</version>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- mocking framework -->
+        <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-core</artifactId>
+            <version>${mockito.version}</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-junit-jupiter</artifactId>
+            <version>3.7.7</version>
+            <scope>test</scope>
+        </dependency>
+
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.1</version>
+                <configuration>
+                    <source>11</source>
+                    <target>11</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>

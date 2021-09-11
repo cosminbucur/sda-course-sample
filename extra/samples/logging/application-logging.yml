@@ -1,0 +1,15 @@
+# starter-web or jpa is using logback with slf4j as implementation
+logging:
+  # default logging goes to console
+  file: spring-boot/log/app.log # write logs to this file
+  patter:
+    # logging pattern for the console
+    console: %d{yyyy-MM-dd HH:mm:ss} - %msg%n
+    # logging pattern for file
+    file: %d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%
+  level:
+    root: INFO
+    org.springframework.web: ERROR            # spring code
+    org.springframework.transaction: TRACE    # spring transactions
+    org.hibernate: ERROR                      # hibernate code
+    com.sda.spring.boot: INFO                 # my code

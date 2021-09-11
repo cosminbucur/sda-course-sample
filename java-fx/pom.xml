@@ -2,6 +2,7 @@
 <project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xmlns="http://maven.apache.org/POM/4.0.0"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
     <parent>
         <artifactId>sda-course-sample</artifactId>
         <groupId>com.sda</groupId>
@@ -54,7 +55,7 @@
                     <source>11</source>
                     <target>11</target>
                     <release>11</release>
-                    <mainClass>com.bucur.containers.DemoContainers</mainClass>
+                    <mainClass>com.sda.javafx.containers.DemoContainers</mainClass>
                 </configuration>
             </plugin>
         </plugins>

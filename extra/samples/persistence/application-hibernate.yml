@@ -1,0 +1,29 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/tutorial?serverTimezone=UTC
+    username: root
+    password: root
+  jpa:
+    hibernate:
+      # will create tables but not database, in testing or production databases, you will want to use the validate option
+      # turn off automatic schema creation to avoid conflicts
+
+      #  none (no schema generation)
+      #  create (create the schema)
+      #  create-drop (create the schema and drop it at the end)
+      #  update (update the schema if are changes)
+      #  validate (validate the schema)
+      ddl-auto: create
+      # hibernate 5 default naming strategy
+      naming.physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+      # ??
+      naming.implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyJpaCompliantImpl
+    properties:
+      hibernate:
+        # use dialect
+        dialect: org.hibernate.dialect.MySQL8Dialect
+        show_sql: true
+        format_sql: false
+        # recommended value as the new generators are more efficient and closer to the JPA 2 specification semantic
+        id.new_generator_mappings: true
