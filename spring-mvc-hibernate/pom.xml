@@ -10,9 +10,10 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>spring-mvc-hibernate</artifactId>
+    <packaging>war</packaging>
 
     <properties>
-        <mysql.version>8.0.21</mysql.version>
+        <spring-boot.version>2.4.2</spring-boot.version>
         <h2.version>1.4.200</h2.version>
         <javax-validator.version>2.0.1.Final</javax-validator.version>
         <hibernate-validator.version>6.1.6.Final</hibernate-validator.version>
@@ -20,7 +21,6 @@
         <tomcat-embed-jasper.version>9.0.27</tomcat-embed-jasper.version>
         <javax.servlet.jsp-api.version>2.3.3</javax.servlet.jsp-api.version>
         <taglibs-standard-impl.version>1.2.5</taglibs-standard-impl.version>
-        <bootstrap.version>4.3.1</bootstrap.version>
     </properties>
 
     <dependencies>
@@ -117,5 +117,15 @@
             <version>${bootstrap.version}</version>
         </dependency>
     </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <version>${spring-boot.version}</version>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>
